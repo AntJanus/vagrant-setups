@@ -1,0 +1,18 @@
+# encoding: utf-8
+
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant::Config.run do |config|
+
+  config.vm.box = "precise64"
+  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
+  config.ssh.forward_agent = true
+  config.vm.provision :shell, :path => "./bin/provision.sh"
+
+  # define host
+  config.vm.network :hostonly, "11.11.11.11"
+
+  # If host is unavailable you can forward ports like so
+  # config.vm.forward_port 80, 3000
+end
