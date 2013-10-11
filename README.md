@@ -14,6 +14,20 @@ All the setups should work; however, my laravel setup is one that I constantly t
 There maybe a Ruby one coming up
 
 
+Versions
+===============
+
+A little about each one:
+
+**Laravel**:
+
+* requires HostManager to work
+* sets up database. Check config files for usernames/passwords
+* will work straight out the box with Laravel installed in the root folder
+
+
+
+
 OS
 ============
 
