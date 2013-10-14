@@ -3,8 +3,8 @@ Vagrant.configure("2") do |config|
   config.hostmanager.manage_host  = true
   config.hostmanager.aliases = %w(mynode.dev)
 
-  config.vm.box = "centos6.4-new"
-  config.vm.box_url = "http://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.4-x86_64-v20130731.box"
+  config.vm.box = "precise64"
+  config.vm.box_url  = 'http://files.vagrantup.com/precise64.box'
   config.vm.hostname = 'node-box'
   config.vm.network :private_network, ip: "12.12.12.12"
     config.ssh.forward_agent = true
